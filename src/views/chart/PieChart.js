@@ -5,7 +5,7 @@ const chartData = {
 	backgroundColor: '#fff',
 	title: {
 		top: 30,
-		text: '饼图',
+		text: '目的地用车情况',
 		textStyle: {
 			fontWeight: 'normal',
 			fontSize: 16,
@@ -21,7 +21,7 @@ const chartData = {
 	legend: {
 		orient: 'vertical',
 		x: 20,
-		data: ['电费', '水费', '物业费', '管理费', '停车费'],
+		data: ['上海', '天津', '北京', '深圳', '香港'],
 		top: 20
 	},
 	series: [
@@ -30,7 +30,7 @@ const chartData = {
 			type: 'pie',
 			radius: '55%',
 			center: ['50%', '60%'],
-			data: [{ value: 100, name: '电费' }, { value: 50, name: '水费' }, { value: 224, name: '物业费' }, { value: 60, name: '管理费' }, { value: 800, name: '停车费' }]
+			data: [{ value: 100, name: '上海' }, { value: 50, name: '天津' }, { value: 224, name: '北京' }, { value: 60, name: '深圳' }, { value: 60, name: '香港' }]
 		}
 	]
 };

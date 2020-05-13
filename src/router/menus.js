@@ -12,90 +12,75 @@ export const menus = [
 		title: '首页',
 		icon: 'home'
 	},
+
+
 	{
-		path: '/icon',
-		title: '图标',
-		icon: 'file'
+		path: '/form/basic2',
+		title: '用车申请',
+		icon: 'form'
 	},
-	{
-		path: '/form',
-		title: '表单',
-		icon: 'form',
-		children: [
-			{
-				path: '/form/basic',
-				title: '基本表单'
-			},
-			{
-				path: '/form/editor',
-				title: '富文本'
-			},
-			{
-				path: '/form/markdown',
-				title: 'MarkDown'
-			}
-		]
-	},
-	{
-		path: '/menu',
-		title: '多级菜单',
-		icon: 'menu',
-		children: [
-			{
-				path: '/menu/level',
-				title: '二级菜单',
-				children: [
-					{
-						path: '/menu/level/submenu-1',
-						title: '三级菜单1',
-					},
-					{
-						path: '/menu/level/submenu-2',
-						title: '三级菜单2'
-					}
-				]
-			}
-		]
-	},
+
+
+	// {
+	// 	path: '/menu',
+	// 	title: '多级菜单',
+	// 	icon: 'menu',
+	// 	children: [
+	// 		{
+	// 			path: '/menu/level',
+	// 			title: '二级菜单',
+	// 			children: [
+	// 				{
+	// 					path: '/menu/level/submenu-1',
+	// 					title: '三级菜单1',
+	// 				},
+	// 				{
+	// 					path: '/menu/level/submenu-2',
+	// 					title: '三级菜单2'
+	// 				}
+	// 			]
+	// 		}
+	// 	]
+	// },
 	{
 		path: '/table',
-		title: '表格',
+		title: '车辆管理',
 		icon: 'table',
 		children: [
 			{
-				path: '/table/basic',
-				title: '基础表格'
+				path: '/form/basic',
+				title: '车辆管理信息录入'
 			},
 			{
 				path: '/table/edit',
-				title: '表格编辑'
+				title: '车辆管理信息修改'
 			},
 			{
 				path: '/table/search',
-				title: '表格搜索'
+				title: '车辆管理信息查询'
 			}
 		]
 	},
 	{
 		path: '/chart',
-		title: '图表',
+		title: '统计查询',
 		icon: 'area-chart',
 		children: [
 			{
 				path: '/chart/line',
-				title: '折线图'
+				title: '用车情况统计'
 			},
 			{
 				path: '/chart/keyboard',
-				title: '键盘图表'
+				title: '实际用车统计'
 			},
 			{
 				path: '/chart/bar',
-				title: '柱状图'
+				title: '各月份行驶里程'
 			},
 			{
 				path: '/chart/pie',
-				title: '饼图'
+				title: '目的地用车情况'
 			},
 			{
 				path: '/chart/mixin',
@@ -119,6 +104,19 @@ export const menus = [
 			{
 				path: '/control/other',
 				title: '其它'
+			}
+		]
+	},
+	{
+		path: '/form',
+		title: '引入编辑器',
+		icon: 'form',
+		children: [
+
+
+			{
+				path: '/form/markdown',
+				title: 'MarkDown'
 			}
 		]
 	},

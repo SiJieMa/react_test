@@ -13,23 +13,26 @@ class TableEdit extends Component {
 		selectedRowKeys: [],
 		columns: [
 			{
-				title: 'Name',
+				title: '车辆车牌号',
 				dataIndex: 'name'
 			},
 			{
-				title: 'Age',
+				title: '载客人数',
 				dataIndex: 'age'
 			},
 			{
-				title: 'Address',
+				title: '司机',
 				dataIndex: 'address'
 			},
 			{
-				title: 'Email',
+				title: '公里数',
+				dataIndex: 'email'
+			},	{
+				title: '年检时间',
 				dataIndex: 'email'
 			},
 			{
-				title: 'Action',
+				title: '操作',
 				dataIndex: 'Action',
 				width: 200,
 				align: 'center',

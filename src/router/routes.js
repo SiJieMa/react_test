@@ -13,6 +13,7 @@ import TableBasic from '../views/table/TableBasic';
 import TableEdit from '../views/table/TableEdit';
 import TableSearch from '../views/table/TableSearch';
 import BasicForm from '../views/form/BasicForm';
+import BasicForm2 from '../views/form/BasicForm2';
 import Editor from '../views/form/TextEditor';
 import News from '../views/news/News';
 import MarkDown from '../views/form/MarkDown';
@@ -27,6 +28,7 @@ export const routes = [
 	{ path: '/dashboard', component: Dashboard },
 	{ path: '/icon', component: Icon },
 	{ path: '/form/basic', component: BasicForm },
+	{ path: '/form/basic2', component: BasicForm2 },
 	{ path: '/form/editor', component: Editor },
 	{ path: '/form/markdown', component: MarkDown },
 	{ path: '/menu/level/submenu-1', component: MenuOne },

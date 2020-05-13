@@ -14,20 +14,20 @@ class TableSearch extends Component {
 		selectedRowKeys: [],
 		columns: [
 			{
-				title: 'Name',
+				title: '司机',
 				dataIndex: 'name',
 				sorter: true,
 				render: name => `${name.first} ${name.last}`,
 				width: '20%'
 			},
 			{
-				title: 'Gender',
+				title: '性别',
 				dataIndex: 'gender',
 				filters: [{ text: 'Male', value: 'male' }, { text: 'Female', value: 'female' }],
 				width: '20%'
 			},
 			{
-				title: 'Email',
+				title: '车牌型号',
 				dataIndex: 'email'
 			}
 		]

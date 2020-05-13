@@ -56,7 +56,7 @@ class Login extends Component {
 					}}
 				/>
 				<div className="content">
-					<div className="title">后台管理系统</div>
+					<div className="title">车辆调度管理系统——————马思捷</div>
 					<Form className="login-form">
 						<FormItem>
 							{getFieldDecorator('userName', {

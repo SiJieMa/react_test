@@ -104,7 +104,7 @@ class BasicForm extends React.Component {
 		return (
 			<div className="shadow-radius">
 				<div className="public-title">
-					<h1>车辆信息录入</h1>
+					<h1>用车申请</h1>
 					<h1>
 						更多表单antd表单组件参考：<a target="_blank" href="https://ant.design/components/form-cn/" rel="noopener noreferrer">Form </a>
 					</h1>
@@ -115,7 +115,7 @@ class BasicForm extends React.Component {
 					<Form.Item
 						label={
 							<span>
-								车牌号&nbsp;
+								申请人&nbsp;
 								<Tooltip title="请您输入车辆车牌号？">
 									<Icon type="question-circle-o" />
 								</Tooltip>
@@ -123,7 +123,7 @@ class BasicForm extends React.Component {
 						}
 					>
 						{getFieldDecorator('nickname', {
-							rules: [{ required: true, message: '请输入车辆车牌号！', whitespace: true }]
+							rules: [{ required: true, message: '请输入申请人！', whitespace: true }]
 						})(<Input />)}
 					</Form.Item>
 
@@ -131,30 +131,30 @@ class BasicForm extends React.Component {
 					<Form.Item
 						label={
 							<span>
-								型号&nbsp;
-								<Tooltip title="请您输入型号？">
+								用车时间&nbsp;
+								<Tooltip title="请您输入用车时间">
 									<Icon type="question-circle-o" />
 								</Tooltip>
 							</span>
 						}
 					>
 						{getFieldDecorator('nickname2', {
-							rules: [{ required: true, message: '请输入型号！', whitespace: true }]
+							rules: [{ required: true, message: '请输入用车时间！', whitespace: true }]
 						})(<Input />)}
 					</Form.Item>
 
 					<Form.Item
 						label={
 							<span>
-								载客人数&nbsp;
-								<Tooltip title="请您输入载客人数？">
+								人数&nbsp;
+								<Tooltip title="人数？">
 									<Icon type="question-circle-o" />
 								</Tooltip>
 							</span>
 						}
 					>
 						{getFieldDecorator('nickname3', {
-							rules: [{ required: true, message: '请输入载客人数！', whitespace: true }]
+							rules: [{ required: true, message: '人数！', whitespace: true }]
 						})(<Input />)}
 					</Form.Item>
 
@@ -164,15 +164,15 @@ class BasicForm extends React.Component {
 					<Form.Item
 						label={
 							<span>
-								司机&nbsp;
-								<Tooltip title="请您输入司机？">
+								目的地&nbsp;
+								<Tooltip title="目的地？">
 									<Icon type="question-circle-o" />
 								</Tooltip>
 							</span>
 						}
 					>
 						{getFieldDecorator('nickname5', {
-							rules: [{ required: true, message: '请输入司机！', whitespace: true }]
+							rules: [{ required: true, message: '目的地！', whitespace: true }]
 						})(<Input />)}
 					</Form.Item>
 
@@ -180,41 +180,22 @@ class BasicForm extends React.Component {
 					<Form.Item
 						label={
 							<span>
-								公里数&nbsp;
-								<Tooltip title="请您输入公里数？">
+								事由&nbsp;
+								<Tooltip title="请您输入事由？">
 									<Icon type="question-circle-o" />
 								</Tooltip>
 							</span>
 						}
 					>
 						{getFieldDecorator('nickname6', {
-							rules: [{ required: true, message: '请输入公里数！', whitespace: true }]
-						})(<Input />)}
-					</Form.Item>
-
-					<Form.Item
-						label={
-							<span>
-								年检时间&nbsp;
-								<Tooltip title="请您输入年检时间？">
-									<Icon type="question-circle-o" />
-								</Tooltip>
-							</span>
-						}
-					>
-						{getFieldDecorator('nickname7', {
-							rules: [{ required: true, message: '请输入年检时间！', whitespace: true }]
+							rules: [{ required: true, message: '请输入事由！', whitespace: true }]
 						})(<Input />)}
 					</Form.Item>
 
 
 
 
-					<Form.Item label="手机号码">
-						{getFieldDecorator('phone', {
-							rules: [{ required: true, message: '请输入手机号码！' }]
-						})(<Input addonBefore={prefixSelector} style={{ width: '100%' }} />)}
-					</Form.Item>
+
 					<Form.Item {...tailFormItemLayout}>
 						{getFieldDecorator('agreement', {
 							valuePropName: 'checked'
