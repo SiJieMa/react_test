@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 import { Form, Icon, Input, Button } from 'antd';
 import { connect } from 'react-redux';
 import { setUserInfo } from '@/redux/actions/userInfo';
@@ -43,18 +43,18 @@ class Login extends Component {
 		const { getFieldDecorator } = this.props.form;
 		return (
 			<div className="container">
-				<Particles
-					height={this.state.clientHeight - 5 + 'px'}
-					params={{
-						number: { value: 50 },
-						ize: { value: 3 },
-						interactivity: {
-							events: {
-								onhover: { enable: true, mode: 'repulse' }
-							}
-						}
-					}}
-				/>
+				{/*<Particles*/}
+					{/*height={this.state.clientHeight - 5 + 'px'}*/}
+					{/*params={{*/}
+						{/*number: { value: 50 },*/}
+						{/*ize: { value: 3 },*/}
+						{/*interactivity: {*/}
+							{/*events: {*/}
+								{/*onhover: { enable: true, mode: 'repulse' }*/}
+							{/*}*/}
+						{/*}*/}
+					{/*}}*/}
+				{/*/>*/}
 				<div className="content">
 					<div className="title">车辆调度管理系统——————马思捷</div>
 					<Form className="login-form">
